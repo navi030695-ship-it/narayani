@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: myownrunner
+    runs-on: myrunner
 
     steps:
 
