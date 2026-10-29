@@ -25,3 +25,6 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
+
+    - name: OWASP Dependency Check
+      run: dependency-check.sh --scan . --project myapp --format HTML --out reports
